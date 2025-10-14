@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light, dark --prefersdark --default, business;
+}
+
+button {
+  border-radius: 4px;
+}
