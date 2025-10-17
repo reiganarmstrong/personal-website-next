@@ -1,0 +1,66 @@
+@reference "tailwindcss";
+
+.custom-navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0.5rem /* 8px */;
+  height: 5rem;
+  position: fixed;
+  top: 0; /* Lock it to the top of the viewport */
+  z-index: 50; /* Ensure it appears above other content */
+}
+
+.link-box {
+  display: inline-flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-end;
+  @apply pr-2 pl-2;
+}
+
+.nav-menu {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.custom-navbar-start {
+  display: inline-flex;
+  align-items: center;
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.github-icon {
+  display: inline;
+}
+
+.linkedin-icon {
+  display: inline;
+}
+
+@media screen and (max-width: 1300px) {
+  .link-box {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .custom-navbar-start {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .github-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .linkedin-icon {
+    display: none;
+  }
+}

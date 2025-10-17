@@ -1,5 +1,5 @@
 {
-  "name": "check-split-next",
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,10 +7,10 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "hf": "pnpm exec biome check --write --unsafe"
   },
   "dependencies": {
-    "daisyui": "^5.3.0",
     "motion": "^12.23.24",
     "next": "15.5.4",
     "react": "19.1.0",
@@ -22,8 +22,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "daisyui": "^5.3.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "typescript-plugin-css-modules": "^5.2.0"
   },
   "browserslist": "> 1%"
 }
