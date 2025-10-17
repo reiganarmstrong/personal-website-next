@@ -44,14 +44,14 @@ export default () => {
             Links:
           </motion.div>
           <motion.button
-            {...getDefaultAnimationProps({ initialY: -30, delay: 0.1 })}
+            {...getDefaultAnimationProps({ initialY: -30 })}
             type="button"
             className="btn btn-ghost btn-outline btn-info border-2 font-medium text-lg"
           >
             Resume.pdf
           </motion.button>
           <motion.div
-            {...getDefaultAnimationProps({ initialY: -30, delay: 0.1 })}
+            {...getDefaultAnimationProps({ initialY: -30 })}
             className={style["linkedin-icon"]}
           >
             <Link
@@ -72,7 +72,7 @@ export default () => {
             </Link>
           </motion.div>
           <motion.div
-            {...getDefaultAnimationProps({ initialY: -30, delay: 0.1 })}
+            {...getDefaultAnimationProps({ initialY: -30 })}
             className={style["github-icon"]}
           >
             <Link
