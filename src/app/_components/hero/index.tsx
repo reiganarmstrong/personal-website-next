@@ -9,7 +9,11 @@ export default () => {
       <div className="hero-content text-center">
         <div className="join join-vertical max-w-md">
           <motion.div
-            {...getDefaultAnimationProps({ delay: 0 })}
+            {...getDefaultAnimationProps({
+              delay: 0,
+              initialY: -60,
+              duration: 0.4,
+            })}
             className="flex items-start justify-center text-center"
           >
             <Image

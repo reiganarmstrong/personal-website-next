@@ -51,7 +51,7 @@ export default () => {
             Resume.pdf
           </motion.button>
           <motion.div
-            {...getDefaultAnimationProps({ initialY: -30, delay: 0.15 })}
+            {...getDefaultAnimationProps({ initialY: -30, delay: 0.1 })}
             className={style["linkedin-icon"]}
           >
             <Link
@@ -72,7 +72,7 @@ export default () => {
             </Link>
           </motion.div>
           <motion.div
-            {...getDefaultAnimationProps({ initialY: -30, delay: 0.2 })}
+            {...getDefaultAnimationProps({ initialY: -30, delay: 0.1 })}
             className={style["github-icon"]}
           >
             <Link
